@@ -85,19 +85,18 @@ Base URL: `http://localhost:5000/api`
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/auth/register` · `/auth/login` | Auth (returns JWT) |
-| GET  | `/auth/me` | Current user 🔒 |
+| GET  | `/auth/me` | Current user  |
 | GET  | `/restaurants` | List + filter + paginate |
 | GET  | `/restaurants/collections` | Homepage sections |
 | GET  | `/restaurants/nearby?lng=&lat=` | Geo search |
 | GET  | `/restaurants/:id` | Details + dishes + reviews |
-| POST/PUT/DELETE | `/restaurants/:id` | CRUD 🔒 admin |
+| POST/PUT/DELETE | `/restaurants/:id` | CRUD  admin |
 | GET  | `/dishes/trending` · `/dishes/recommendations` | Dish feeds |
-| POST | `/dishes/:id/like` | Like a dish 🔒 |
+| POST | `/dishes/:id/like` | Like a dish  |
 | GET/POST | `/reviews/restaurant/:id` | Read / upsert review |
-| GET/POST | `/users/favourites` · `/users/recent` | Saved & recent 🔒 |
-| GET  | `/admin/analytics` | Dashboard stats 🔒 admin |
+| GET/POST | `/users/favourites` · `/users/recent` | Saved & recent  |
+| GET  | `/admin/analytics` | Dashboard stats  admin |
 
-🔒 = requires `Authorization: Bearer <token>`
 
 ---
 
@@ -131,4 +130,4 @@ foodspot/
 
 ---
 
-Built for food lovers. 🍕🍚🍗
+Built for food lovers.
